@@ -13,6 +13,8 @@ struct node{
 	int data;
 	int color;
 	int d;
+	int dtime;
+	int ftime;
 	struct node *pre;
 	struct edge *next;
 };
@@ -53,7 +55,7 @@ struct node * dequeue(){
 
 
 
-void search(struct node array[],int n){
+void BFS(struct node array[],int n){
 	
 	struct edge *current=NULL;
 
