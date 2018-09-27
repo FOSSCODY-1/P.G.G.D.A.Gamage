@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Breadth first search.h"
+
+#include "Depth first search.h"
 
 //struct node *adj[5];
 void create_graph(struct node adj[],int no_of_nodes){
@@ -58,6 +59,6 @@ int main(){
 	}
 	
 	create_graph(adj,n);
-	BFS(adj,n);
+	DFS(adj,n);
 	
 }
