@@ -1,2 +1,3 @@
 # P.G.G.D.A.Gamage
-[Product Name]
+
+Graph Data Structure Implementation
