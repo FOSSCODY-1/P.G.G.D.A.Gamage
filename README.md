@@ -1,6 +1,6 @@
 # P.G.G.D.A.Gamage
 
-Graph Data Structure Implementation
+###Graph Data Structure Implementation
 
 There are two standard ways of represent a graph G =(V,E):
 			Adjacency Matrix
