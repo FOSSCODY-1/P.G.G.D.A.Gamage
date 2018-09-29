@@ -33,7 +33,15 @@ ____
 * Download **Graph** folder.
 * Open the project using Dev-C++ or any platform that supports C++.
 * Compile and Run to perform required functions.
-____
+___
+### Build On
+* C  Dev-C++ 5.11
+
+___
+### Tested On
+* Windows 10
+
+___
 ### Test Case
 
 ![](Images/testGraph.PNG) ![](Images/testGraph2.PNG)
