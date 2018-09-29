@@ -46,8 +46,8 @@ void DFS(struct node array[],int n){
 	}
 	 
 	
-	for(int i=0;i<n;i++)
-	{
+	for(int i=0;i<n;i++)					//Depth first traversal is carried out even on graphs which are not strongly connected
+	{										
 		if(array[i].color==0)
 		{
 			visit(array,array+i);
