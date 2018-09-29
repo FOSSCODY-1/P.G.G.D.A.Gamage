@@ -31,9 +31,11 @@ The adjacency list representation of a graph G =(V,E) consists of an array Adj o
 * Open the project using Dev-C++ or any platform that supports C++
 * Compile and Run to perform required finctions
 
-![](Images/testGraph.PNG)
+### Test Case
 
-Function tests are carried out based on above graph.
+![](Images/testGraph.PNG) ![](Images/testGraph2.PNG)
+
+* Function tests are carried out based on above graph.
 
 
 ![](Images/Scrns1.png)
