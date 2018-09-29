@@ -29,7 +29,7 @@ The adjacency list representation of a graph G =(V,E) consists of an array Adj o
 * Open the project using Dev-C++ or any platform that supports C++
 * Run and perform required functions
 
-
+![](Images/Scrns1.png)
 
 
 
