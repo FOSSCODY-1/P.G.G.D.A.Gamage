@@ -20,16 +20,17 @@ The adjacency list representation of a graph G =(V,E) consists of an array Adj o
 * Add edge</br>
 * Remove vertex</br>
 * Remove edge</br>
-* Breadth First Search</br>
-* Depth first search</br>
+* Breadth First Traversal</br>
+* Depth first Traversal</br>
 
 
 
 ### Installation
 
-* You can clone or download the repository 
-* Open the project using Dev-C++ or any platform that supports C++
-* Compile and Run to perform required finctions
+* You can clone or download the repository .
+* Download Graph folder.
+* Open the project using Dev-C++ or any platform that supports C++.
+* Compile and Run to perform required functions.
 
 ### Test Case
 
@@ -44,7 +45,15 @@ The adjacency list representation of a graph G =(V,E) consists of an array Adj o
 ![](Images/Scrns4.PNG)
 ![](Images/Scrns5.PNG)
 
+### Future Objectives
 
-
+* Topological Sort
+* Shortest Path Algorithm
+* Classification of Edges
+	* Tree edeges
+	* Back edges
+	* Forward edges
+	* Cross edges 
+* Strongly-Connected Components
 
 						
