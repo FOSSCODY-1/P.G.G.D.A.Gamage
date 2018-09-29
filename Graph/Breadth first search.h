@@ -18,7 +18,7 @@ struct node{
 	struct node *pre;
 	struct edge *next;
 };
-
+//Queue has been introduced carry out Breadth first search properly
 
 
 // start of queue
@@ -60,10 +60,10 @@ struct node * dequeue(){
 
 void BFS(struct node array[]){
 	
-	struct edge *current=NULL;
-	
-	array->color=1;
-	array->d=0;
+	struct edge *current=NULL;					//Numbers has been used to keep track of the Breadth first travesal process
+											    //All nodes start out with 0(white color in basic algorithm)
+	array->color=1;								//Number 1 for Gray color
+	array->d=0;									//Number 2 for black color
 	array->pre=NULL;
 	
 	enqueue(array+0);
