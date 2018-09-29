@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include "Depth first search.h"
 #include "addVertex.h"
-//#include "removeVertex.h"
+
 
 
 struct node adj[20];
 
-
-void callBFS(){											// 	This function will make color of every vertex before performing BFS
+// 	This function will make color of every vertex before performing BFS since function is performed based on the 
+//  color of the vertex
+void callBFS(){											
 	
 	for(int j=0;j<20;j++)
 	{
@@ -18,7 +18,7 @@ void callBFS(){											// 	This function will make color of every vertex befo
 	 
 	for(int i=0;i<20;i++)
 	{
-									// 	This is will perfom BFS even on Graphs which are not strongly connected
+// 	This is will perfom BFS even on Graphs which are not strongly connected
 		if(adj[i].data!=0 && adj[i].color==0)
 		{
 			BFS(adj+i);
@@ -68,6 +68,7 @@ void create_graph(struct node adj[],int no_of_nodes){
 	}
 	
 }
+
 int main(){
 	
 	int n,op;
@@ -100,7 +101,7 @@ int main(){
 			scanf("%d",&op);	
 			
 			switch(op)
-			{
+			{	// Add new vertex to existing Graph
 				case 1:
 					int val;
 					printf("Enter value of new vertex:");			
@@ -108,6 +109,8 @@ int main(){
 					addVertex(adj,val);
 					printf("Vertex successfully created\n");
 					break;
+					
+				// Add edge between given two vertices	
 				case 2:	
 					int parent,child;
 					printf("Enter parent and child:");
@@ -115,6 +118,8 @@ int main(){
 					addEdge(adj,parent,child);
 					printf("Edge successfully created\n");
 					break;
+					
+				//	Delete vertex from the graph and all edges connected with it
 				case 3:	
 					
 					printf("Enter value of vertex you want to delete :");	
@@ -122,6 +127,8 @@ int main(){
 					removeVertex(adj,val);
 					printf("Vertex successfully deleted\n");
 					break;
+					
+				// Delete an edge between two vertices	
 				case 4:
 					
 					printf("Enter parent and child:");
@@ -129,37 +136,28 @@ int main(){
 					removeEdge(adj,parent,child);
 					printf("Edge successfully deleted\n");
 					break;	
-				
+					
+				// Perform breadth first traversal 
 				case 5:
 					printf("\nFollowing is the Breadth First Travesal (starting from vertex 1):");
 					callBFS();			
 					break;
-					
+				// Perform Depth first traversal	
 				case 6:
 					printf("\nFollowing is the Depth First Travesal (starting from vertex 1):");
-					DFS(adj,n);	
+					DFS(adj,n);						
 					
-					
-			}		
-			
+			}				
 			
 		}
 		
 		else
 		{
 			break;
-		}
-		
-			
-	
+		}	
 		
 		
-	}
-	
-
-	
-	
-	
+	}	
 	
 
 	
