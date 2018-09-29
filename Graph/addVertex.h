@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "removeVertex.h"
 
+// Add vertex to Graph but edges has to be created explicitly by calling 'addEdge' method
 int addVertex(struct node adj[],int data){
 		
 		int i = data -1;
@@ -15,6 +16,8 @@ int addVertex(struct node adj[],int data){
 		return 1;
 	
 }
+
+// Creates one edge at a time
 
 int addEdge(struct node array[],int parent,int child){
 	
