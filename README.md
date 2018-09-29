@@ -23,11 +23,18 @@ The adjacency list representation of a graph G =(V,E) consists of an array Adj o
 * Breadth First Search</br>
 * Depth first search</br>
 
+
+
 ### Installation
 
 * You can clone or download the repository 
 * Open the project using Dev-C++ or any platform that supports C++
-* Run and perform required functions
+* Compile and Run to perform required finctions
+
+![](Images/testGraph.PNG)
+
+Function tests are carried out based on above graph.
+
 
 ![](Images/Scrns1.png)
 ![](Images/Scrns2.png)
