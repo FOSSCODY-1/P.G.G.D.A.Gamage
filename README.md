@@ -30,6 +30,7 @@ The adjacency list representation of a graph G =(V,E) consists of an array Adj o
 * Run and perform required functions
 
 ![](Images/Scrns1.png)
+![](Images/Scrns2.png)
 
 
 
