@@ -28,7 +28,7 @@ ____
 ### Installation
 
 * You can clone or download the repository .
-* Download Graph folder.
+* Download **Graph** folder.
 * Open the project using Dev-C++ or any platform that supports C++.
 * Compile and Run to perform required functions.
 ____
