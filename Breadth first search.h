@@ -2,19 +2,19 @@
 
 //Creating structures
 
- //for edge
+ 													//for edge
 struct edge{
 	int data;
 	struct edge *next;
 };
 
-//for vertex
+													//for vertex
 struct node{
 	int data;
 	int color;
 	int d;
 	int dtime;
-	int ftime;
+	int ftime;	
 	struct node *pre;
 	struct edge *next;
 };
@@ -27,14 +27,17 @@ struct node *queue[20];
 int front=-1,rear=-1;
 
 void enqueue(struct node *n){
-	if(front==-1 && rear==-1){
+	
+	if(front==-1 && rear==-1)
+	{
 		front++;
 		queue[front]=n;
 		rear++;
-		//printf("%d",queue[front]);
+		
 	}
 	
-	else{
+	else
+	{
 		rear++;
 		queue[rear]=n;
 		
@@ -55,10 +58,9 @@ struct node * dequeue(){
 
 
 
-void BFS(struct node array[],int n){
+void BFS(struct node array[]){
 	
 	struct edge *current=NULL;
-
 	
 	array->color=1;
 	array->d=0;
@@ -66,37 +68,37 @@ void BFS(struct node array[],int n){
 	
 	enqueue(array+0);
 	
-	while(front<=rear){
-		
-		struct node *u=NULL;
+	while(front<=rear)
+	{
 		int i=0;
-		u=dequeue();
+		struct node *u=NULL;
 		
+		u=dequeue();		
 		current=u->next;
 		
-		while(current){
+		while(current)
+		{
 			
-			if(array[(current->data)-1].color==0){
+			if(array[(current->data)-1].color==0)
+			{
 				
-			array[(current->data)-1].color=1;
-			array[(current->data)-1].d=u->d+1;
-			array[(current->data-1)].pre=u;
+				array[(current->data)-1].color=1;
+				array[(current->data)-1].d=u->d+1;
+				array[(current->data-1)].pre=u;
 			
-			int count=(current->data)-1;
-			enqueue(array+count);
+				int c=(current->data)-1;
+				enqueue(array+c);
 			
 				
 				
 				
 			}
-			current=current->next;
-			//printf("%d\n",current);	
-			//printf("%d",current);
 			
+			current=current->next;
 			
 		}
-		printf("%d\n",u->data);
 		
+		printf("%d\n",u->data);		
 		
 	}
 	
