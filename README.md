@@ -70,7 +70,5 @@ ____
 
 ___
 ### License
-* This project is licensed under the MIT License.See [LICENSE.txt](
-      P.G.G.D.A.Gamage/LICENSE.txt
-    ) file for detail.
+* This project is licensed under the MIT License.See [LICENSE.txt](https://github.com/FOSSCODY-1/P.G.G.D.A.Gamage/blob/master/LICENSE.txt) file for detail.
     						
